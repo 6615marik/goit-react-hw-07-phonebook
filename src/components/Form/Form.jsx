@@ -5,7 +5,7 @@ import { useSelector } from 'react-redux';
 import { getContacts } from 'redux/selectors';
 export const Form = () => {
   const contacts = useSelector(getContacts);
-  console.log(contacts);
+  // console.log(contacts);
   const [name, setName] = useState('');
   const [number, setNumber] = useState('');
 

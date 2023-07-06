@@ -5,12 +5,12 @@ import { getContacts, getFilter } from 'redux/selectors';
 export const Contacts = () => {
   const contacts = useSelector(getContacts);
   const filter = useSelector(getFilter);
-  console.log(contacts);
+  // console.log(contacts);
 
   const visibleContacts = contacts.filter(contact =>
     contact.name.toLowerCase().includes(filter.toLowerCase())
   );
-  console.log(visibleContacts);
+  // console.log(visibleContacts);
   const dispatch = useDispatch();
 
   return (
